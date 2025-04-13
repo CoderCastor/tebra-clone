@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import imagetitleLogo from "../../assets/logo-header.xl.svg";
 import imageLogo from "../../assets/tebra-symbol.svg";
-
 import { RiArrowDownWideLine } from "react-icons/ri";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoClose } from "react-icons/io5";
@@ -9,7 +8,7 @@ import { AnimatePresence, motion } from "motion/react";
 
 function MainNavbar({ setTabHoverTitle, setSmallScreenMenu, smallScreenMenu }) {
     return (
-        <div className="sm:px-14 px-4 flex justify-between items-center py-4 border-b-1 border-neutral-300">
+        <div className="lg:px-14 md:px-14  px-4 flex justify-between items-center py-4 border-b-1 border-neutral-300">
             <span className="">
                 <img
                     src={imagetitleLogo}
@@ -73,7 +72,7 @@ function MainNavbar({ setTabHoverTitle, setSmallScreenMenu, smallScreenMenu }) {
                     Get a demo
                 </button>
                 
-                <button className="sm:hidden text-2xl">
+                <button className="lg:hidden text-2xl">
                     {smallScreenMenu ? (
                         <AnimatePresence>
 

@@ -3,6 +3,7 @@ import Ads from './Ads'
 import MiddleHeader from './MiddleHeader'
 import MainNavbar from './MainNavbar'
 import TabComponent from './TabComponent'
+import MainMenu from './smallScreenMenu.jsx/MainMenu'
 
 function MainHeader() {
 
@@ -15,6 +16,7 @@ function MainHeader() {
       <MiddleHeader/>
       <MainNavbar setTabHoverTitle={setTabHoverTitle} setSmallScreenMenu={setSmallScreenMenu} smallScreenMenu={smallScreenMenu} />
       <TabComponent tabHoverTitle={tabHoverTitle} />
+      <MainMenu smallScreenMenu={smallScreenMenu}/>
       {tabHoverTitle}
     </div>
   )
